@@ -29,11 +29,6 @@ class Bot(BaseBot):
         print(f"{user.username} entrou na sala")   
         await self.highrise.chat(f"𝘞𝘦𝘭𝘤𝘰𝘮𝘦 𝘵𝘰 𝙎𝙥𝙞𝙧𝙞𝙩 𝘼𝙣𝙩𝙤𝙞𝙣𝙚 𝘿𝙤𝙡𝙡 𝙅𝙖𝙥𝙖𝙣 𝘾𝙖𝙛𝙚, 𝘗𝘭𝘦𝘢𝘴𝘦 𝘨𝘦𝘵 𝘺𝘰𝘶𝘳 𝘯𝘢𝘮𝘦𝘴 𝘤𝘢𝘭𝘭𝘦𝘥 𝘣𝘺 𝙢𝙤𝙙𝙨 𝘧𝘰𝘳 𝘵𝘢𝘣𝘭𝘦𝘴 𝘯𝘶𝘮𝘣𝘦𝘳 💖")
 
-async def on_chat(self, user: User, message: str) -> None:
-        if message.startswith("users"):
-            room_users = (await self.highrise.get_room_users()).content
-            await self.highrise.chat(f"There are {len(room_users)} users in the room")
-
         await self.highrise.chat(f"Use: /help For More Informations.")
            
         await self.highrise.send_emote("hcc-jetpack")
