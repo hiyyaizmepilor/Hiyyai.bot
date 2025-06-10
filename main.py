@@ -27,7 +27,7 @@ class Bot(BaseBot):
         await self.highrise.walk_to(Position( 3.0 , 0.0 , 2.0 , "FrontRight"))
     async def on_user_join(self, user: User, position: Position | AnchorPosition) -> None:
         print(f"{user.username} entrou na sala")   
-        await self.highrise.chat(f"Welcome To TLR Grab Room, Happy Spinning 💝")
+        await self.highrise.chat(f"𝘞𝘦𝘭𝘤𝘰𝘮𝘦 𝘵𝘰 𝙎𝙥𝙞𝙧𝙞𝙩 𝘼𝙣𝙩𝙤𝙞𝙣𝙚 𝘿𝙤𝙡𝙡 𝙅𝙖𝙥𝙖𝙣 𝘾𝙖𝙛𝙚, 𝘗𝘭𝘦𝘢𝘴𝘦 𝘨𝘦𝘵 𝘺𝘰𝘶𝘳 𝘯𝘢𝘮𝘦𝘴 𝘤𝘢𝘭𝘭𝘦𝘥 𝘣𝘺 𝙢𝙤𝙙𝙨 𝘧𝘰𝘳 𝘵𝘢𝘣𝘭𝘦𝘴 𝘯𝘶𝘮𝘣𝘦𝘳 💖")
 
         await self.highrise.chat(f"Use: /help For More Informations.")
            
